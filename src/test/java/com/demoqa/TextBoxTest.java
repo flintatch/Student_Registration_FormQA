@@ -22,11 +22,12 @@ public class TextBoxTest {
         String name = "Irwing";
         String lastName = "Price";
         String mobile = "1111222234";
+        String Email = "gvladovsky@gmail.com";
 
         open("/automation-practice-form");
         $("#firstName").setValue(name);
         $("#lastName").setValue(lastName);
-        $("#userEmail").setValue("gvladovsky@gmail.com");
+        $("#userEmail").setValue(Email);
         $("#genterWrapper").$(byText("Male")).click();
         $("#userNumber").setValue(mobile);
         $("#dateOfBirthInput").click();
