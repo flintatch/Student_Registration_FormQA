@@ -21,13 +21,14 @@ public class TextBoxTest {
     void fillFormTest() {
         String name = "Irwing";
         String lastName = "Price";
+        String mobile = "1111222234";
 
         open("/automation-practice-form");
         $("#firstName").setValue(name);
         $("#lastName").setValue(lastName);
         $("#userEmail").setValue("gvladovsky@gmail.com");
         $("#genterWrapper").$(byText("Male")).click();
-        $("#userNumber").setValue("1111222234");
+        $("#userNumber").setValue(mobile);
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("April");
         $(".react-datepicker__year-select").selectOption("1996");
@@ -45,7 +46,6 @@ public class TextBoxTest {
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
         $$(".table-responsive").findBy(text("Student Name")).shouldHave(text("Irwing Price"));
         $$(".table-responsive").findBy(text("Student Email")).shouldHave(text("gvladovsky@gmail.com"));
-        $$(".table-responsive").findBy(text("Gender")).shouldHave(text("Male"));
         $$(".table-responsive").findBy(text("Gender")).shouldHave(text("Male"));
         $$(".table-responsive").findBy(text("Mobile")).shouldHave(text("1111222234"));
         $$(".table-responsive").findBy(text("Date of Birth")).shouldHave(text("08 April,1996"));
