@@ -47,20 +47,4 @@ public class TextBoxWithCommentsTestXX {
                         .checkResult("Address", "address 1")
                         .checkResult("State and City", "NCR Delhi");
     }
-
-    @Test
-    void fillFormWithMinimumInfoTest() {
-
-        textBoxTestPage.openPage()
-                .setFirstName("Irwing")
-                .setLastName("Price")
-                .setEmail("gvladovsky@gmail.com")
-                .setGender("Male");
-        $("#submit").click();
-
-        $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-        $$(".table-responsive").findBy(text("Student Name")).shouldHave(text("Irwing Price"));
-        $$(".table-responsive").findBy(text("Gender")).shouldHave(text("Male"));
-        $$(".table-responsive").findBy(text("Email")).shouldHave(text("gvladovsky@gmail.com"));
-    }
 }
