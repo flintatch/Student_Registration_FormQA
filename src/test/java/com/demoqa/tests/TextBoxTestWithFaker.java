@@ -37,7 +37,6 @@ public class TextBoxTestWithFaker {
     String state = "NCR";
     String city = "Delhi";
 
-
     @Test
     void fillFormTest() {
 

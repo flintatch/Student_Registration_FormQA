@@ -15,7 +15,9 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class TextBoxWithCommentsTestXX {
+
     textBoxTestPage textBoxTestPage = new textBoxTestPage();
+
     Faker faker = new Faker(new Locale("en"));
 
     @BeforeAll
@@ -38,6 +40,7 @@ public class TextBoxWithCommentsTestXX {
     String address = faker.address().streetAddress();
     String state = "NCR";
     String city = "Delhi";
+
     @Test
     void fillFormTest() {
         textBoxTestPage.openPage()
@@ -52,6 +55,7 @@ public class TextBoxWithCommentsTestXX {
                 .setPicture("image.png")
                 .setAddress(address, state, city)
                 .clickButton();
+
         textBoxTestPage.checkTableResultsVisible()
                 .checkResult("Student Name", (firstName + " " + lastName))
                 .checkResult("Student Email", email)
