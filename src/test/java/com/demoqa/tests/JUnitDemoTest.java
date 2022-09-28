@@ -4,7 +4,6 @@ import org.junit.jupiter.api.*;
 
 public class JUnitDemoTest {
 
-
     @BeforeAll
     static void setUp() {
         System.out.println("### @BeforeAll !");
