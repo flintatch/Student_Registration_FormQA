@@ -38,7 +38,6 @@ public class TextBoxWithCommentsTestXX {
     String address = faker.address().streetAddress();
     String state = "NCR";
     String city = "Delhi";
-
     @Test
     void fillFormTest() {
         textBoxTestPage.openPage()
@@ -53,7 +52,6 @@ public class TextBoxWithCommentsTestXX {
                 .setPicture("image.png")
                 .setAddress(address, state, city)
                 .clickButton();
-
         textBoxTestPage.checkTableResultsVisible()
                 .checkResult("Student Name", (firstName + " " + lastName))
                 .checkResult("Student Email", email)
