@@ -10,7 +10,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class TextBoxTestWithTestData {
 
-
     @BeforeAll
     static void setUp() {
         Configuration.baseUrl = "https://demoqa.com";
@@ -32,10 +31,8 @@ public class TextBoxTestWithTestData {
     String state = "NCR";
     String city = "Delhi";
 
-
     @Test
     void fillFormTest() {
-
 
         open("/automation-practice-form");
         $("#firstName").setValue(firstName);
