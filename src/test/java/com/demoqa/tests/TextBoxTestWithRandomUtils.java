@@ -11,7 +11,6 @@ import static com.demoqa.utils.RandomUtils.*;
 
 public class TextBoxTestWithRandomUtils {
 
-
     @BeforeAll
     static void setUp() {
         Configuration.baseUrl = "https://demoqa.com";

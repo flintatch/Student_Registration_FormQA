@@ -40,7 +40,6 @@ public class TextBoxWithCommentsTestXX {
     String address = faker.address().streetAddress();
     String state = "NCR";
     String city = "Delhi";
-
     @Test
     void fillFormTest() {
         textBoxTestPage.openPage()
