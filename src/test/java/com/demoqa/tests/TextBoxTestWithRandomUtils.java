@@ -31,6 +31,7 @@ public class TextBoxTestWithRandomUtils {
     String address = "address 1";
     String state = "NCR";
     String city = "Delhi";
+
     @Test
     void fillFormTest() {
         open("/automation-practice-form");
