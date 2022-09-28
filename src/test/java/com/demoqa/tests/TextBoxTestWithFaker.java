@@ -40,7 +40,6 @@ public class TextBoxTestWithFaker {
     @Test
     void fillFormTest() {
 
-
         open("/automation-practice-form");
         $("#firstName").setValue(firstName);
         $("#lastName").setValue(lastName);
