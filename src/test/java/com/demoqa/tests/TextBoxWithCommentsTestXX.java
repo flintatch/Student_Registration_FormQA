@@ -55,15 +55,15 @@ public class TextBoxWithCommentsTestXX {
                 .clickButton();
 
         textBoxTestPage.checkTableResultsVisible()
-                        .checkResult("Student Name", (firstName + " " + lastName))
-                        .checkResult("Student Email", email)
-                        .checkResult("Date of Birth", ((day + " " + month + "," + year)))
-                        .checkResult("Gender", gender)
-                        .checkResult("Mobile", mobile)
-                        .checkResult("Subjects", subject)
-                        .checkResult("Hobbies", hobby)
-                        .checkResult("Picture", "image.png")
-                        .checkResult("Address", address)
-                        .checkResult("State and City", "NCR Delhi");
+                .checkResult("Student Name", (firstName + " " + lastName))
+                .checkResult("Student Email", email)
+                .checkResult("Date of Birth", ((day + " " + month + "," + year)))
+                .checkResult("Gender", gender)
+                .checkResult("Mobile", mobile)
+                .checkResult("Subjects", subject)
+                .checkResult("Hobbies", hobby)
+                .checkResult("Picture", "image.png")
+                .checkResult("Address", address)
+                .checkResult("State and City", "NCR Delhi");
     }
 }
