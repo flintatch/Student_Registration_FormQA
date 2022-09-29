@@ -1,22 +1,15 @@
 package com.demoqa.tests;
 
 import com.codeborne.selenide.Configuration;
-import com.demoqa.pages.components.CalendarComponent;
-import com.demoqa.pages.textBoxTestPage;
-import com.demoqa.utils.RandomUtils;
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.Locale;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
-
 public class TextBoxWithCommentsTestXX {
 
-    textBoxTestPage textBoxTestPage = new textBoxTestPage();
+    TextBoxTestPage textBoxTestPage = new TextBoxTestPage();
 
     Faker faker = new Faker(new Locale("en"));
 
