@@ -1,17 +1,12 @@
 package com.demoqa.tests;
 
 import com.codeborne.selenide.Configuration;
-import com.demoqa.pages.components.CalendarComponent;
-import com.demoqa.pages.textBoxTestPage;
+import com.demoqa.pages.TextBoxTestPage;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
-
 public class TextBoxWithCommentsTestXX {
-    textBoxTestPage textBoxTestPage = new textBoxTestPage();
+    TextBoxTestPage textBoxTestPage = new TextBoxTestPage();
 
     @BeforeAll
     static void setUp() {
